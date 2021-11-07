@@ -17,9 +17,16 @@ body {
   background-color: #333;
   z-index: 7;
   padding: 15px 0px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
-
+footer{
+  position:-webkit-sticky;
+  color: #ffd31d ;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  z-index: 20;
+}
 #no-notes {
   padding: 100px 0px;
   text-align: center;
@@ -37,6 +44,11 @@ body {
   margin: 15px;
   outline: none;
 }
+ #new-note-title-input,
+  #new-note-body-input {
+    display: block;
+    margin-left: 0px;
+  }
 
 .hidden {
   display: none;
@@ -132,6 +144,10 @@ ul li a {
   transform: rotate(-6deg);
   -moz-transform: rotate(-6deg);
   cursor: default;
+  /* -webkit-user-modify: read-write; */
+  word-wrap: break-word;
+  overflow-y: scroll;
+  
 }
 
 ul li:nth-child(even) a {
@@ -140,6 +156,11 @@ ul li:nth-child(even) a {
   position: relative;
   top: 5px;
   background: #ff5733;
+  /* box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, 0.4); */
+  /* border-radius: .75rem 25px 5% 3em;  */
+  /*top-left, top-right, bottom-right, bottom-left*/
+  /* position: -webkit-sticky;  */
+    /* top: 0px; */
 }
 
 ul li:nth-child(3n) a {
